@@ -15,11 +15,17 @@ body {
   font-size: 14pt;
 }
 
+/* div, p {
+  position: relative;
+  z-index: 0;
+} */
+
 .navbar {
     padding: 20px;
 
     position: sticky;
     top: 0;
+    /* z-index: 2; */
 
     display: flex;
     align-items: center;
@@ -44,7 +50,19 @@ body {
 }
 
 .square {
+  position: fixed;
   height: 50px;
   width: 50px;
   background-color: #555;
+  z-index: -10;
+
+  filter: blur(8px);
+}
+
+.pillar {
+  position: fixed;
+  height: 2000px;
+  width: 50px;
+  background-color: #555;
+  z-index: -5;
 }
