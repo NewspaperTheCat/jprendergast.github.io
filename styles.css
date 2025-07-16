@@ -1,9 +1,50 @@
+:root {
+  --celadon: #BCD8C1;
+  --vanilla: #F3E5AB;
+  --flax: #E3D985;
+  --crayola: #E57A44;
+  --claret: #740F35;
+}
+
 body {
-  background-color: powderblue;
+  background-color: var(--flax);
+
+  margin: 0px;
+
+  font-family: "Audiowide", sans-serif;
+  font-size: 14pt;
 }
-h1 {
-  color: blue;
+
+.navbar {
+    padding: 20px;
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--crayola);
 }
-p {
-  color: red;
+
+/** background elements **/
+.parallax {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2000px;
+}
+
+.parallax > div {
+    position: fixed;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
 }
