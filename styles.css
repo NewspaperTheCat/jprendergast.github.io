@@ -1,37 +1,59 @@
 :root {
-  --celadon: #BCD8C1;
-  --vanilla: #F3E5AB;
-  --flax: #E3D985;
-  --crayola: #E57A44;
-  --claret: #740F35;
+  --ecru: #D8BD8A;
+  --redwood: #AA5042;
+  --wine: #753742;
+  --mortuum: #4F3130;
 }
 
 body {
-  background-color: var(--flax);
+  background-color: var(--ecru);
 
   margin: 0px;
 
   font-family: "Audiowide", sans-serif;
-  font-size: 14pt;
+  font-size: 24px;
+  color: var(--ecru);
 }
 
-/* div, p {
-  position: relative;
-  z-index: 0;
-} */
+img {
+  overflow: hidden;
+  border-radius: 50px;
+}
 
 .navbar {
     padding: 20px;
 
     position: sticky;
     top: 0;
-    /* z-index: 2; */
+    z-index: 2;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--crayola);
+    background-color: var(--wine);
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+
+  padding: 20px;
+  background-color: var(--mortuum);
+  width: 50%;
+  border-radius: 10px;
+
 }
 
 /** background elements **/
@@ -43,10 +65,7 @@ body {
     right: 0;
     bottom: 0;
     height: 2000px;
-}
-
-.parallax > div {
-    position: fixed;
+    z-index: -10;
 }
 
 .square {
@@ -54,15 +73,25 @@ body {
   height: 50px;
   width: 50px;
   background-color: #555;
-  z-index: -10;
+  border-radius: 5px;
 
+  z-index: -10;
   filter: blur(8px);
 }
 
 .pillar {
   position: fixed;
-  height: 2000px;
-  width: 50px;
+  height: 100vh;
+  width: 8vh;
+  background-color: #555;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.bar {
+  position: fixed;
+  height: 25px;
+  width: 100%;
   background-color: #555;
   z-index: -5;
 }
