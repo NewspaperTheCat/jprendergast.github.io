@@ -7,7 +7,7 @@ palette["mortuum"] = "#4F3130";
 const numSquares = 50;
 const numBars = 0;
 const horizontalMargin = 20;
-const blurScale = 5;
+const blurScale = 0;
 
 var parallaxParent;
 var parallaxElements;
