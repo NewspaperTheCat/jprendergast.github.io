@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      James Prendergast
+      James Prendergast - Portfolio
     </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
@@ -23,17 +23,18 @@
       <!-- <div class="bar" style="top: 600px; z-index: -7; background-color:var(--crayola);"></div> -->
     </div>
 
+    <script src="pageNavigation.js"></script>
     <div style="display:flex;flex-direction: column;position: sticky;top:0;">
       <div id="navbar" class="navbar">
         <p>James Prendergast</p>
         <div style="flex-grow: 1;">
           <div class="pages">
             <
-            <a>Projects</a>
+            <button onclick="toAbout()">About</button>
             |
-            <a>About</a>
+            <button onclick="toProjects()">Projects</button>
             |
-            <a>Resume</a>
+            <button onclick="toResume()">Resume</button>
             <|
           </div>
           <div class="icons">
@@ -60,7 +61,7 @@
         <img src="Resources/SeniorPortraitCroppedHead.jpg" alt="James Prendergast - Portrait Photo">
       </div>
 
-      <div class="content" style="width: 80%;background-color: var(--redwood);"></div>
+      <div class="content" id="projectsDivider" style="width: 80%;background-color: var(--redwood);"></div>
 
       <div class="content">
         <img src="Resources/SuperTimeOut.png" alt="Super Time Out - Title Screen">
