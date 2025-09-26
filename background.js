@@ -4,10 +4,10 @@ palette["redwood"] = "#AA5042";
 palette["wine"] = "#753742";
 palette["mortuum"] = "#4F3130";
 
-const numSquares = 50;
+const numSquares = 100;
 const numBars = 0;
 const horizontalMargin = 20;
-const blurScale = 0;
+const blurScale = 1;
 
 var parallaxParent;
 var parallaxElements;
