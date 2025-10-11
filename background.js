@@ -15,6 +15,8 @@ var parallaxElements;
 let loaded = false;
 
 addEventListener("load", (event) => {
+    initializeReferences();
+
     // recollect on load
     parallaxParent = document.getElementsByClassName("parallax")[0];
     parallaxElements = parallaxParent.children;
