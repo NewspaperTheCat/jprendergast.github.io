@@ -7,6 +7,7 @@
 
 body {
   background-color: var(--ecru);
+    height: 100%;
 
   margin: 0px;
 
@@ -27,6 +28,13 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+.navbarHolder {
+    display:flex;
+    flex-direction: column;
+    position: sticky;
+    top:0;
 }
 
 .navbar {
@@ -78,13 +86,13 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-  gap: 20px;
+    gap: 20px;
 
-    padding: 20px;
+    padding: 30px;
     background-color: var(--mortuum);
     max-width: 70%;
     border-radius: 10px;
@@ -151,7 +159,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .pillar {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 8vh;
   background-color: #555;
   z-index: 1;

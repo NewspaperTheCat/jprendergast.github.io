@@ -14,12 +14,28 @@ var parallaxElements;
 
 let loaded = false;
 
-addEventListener("load", (event) => {
-    initializeReferences();
+function createParallax() {
+    // establish connection to where
+    parallaxParent = document.getElementById("parallax");
+    parallaxParent.className = "parallax";
+    if (parallaxParent == null) {
+        loaded = false;
+        return;
+    }
+    parallaxElements = []
 
-    // recollect on load
-    parallaxParent = document.getElementsByClassName("parallax")[0];
-    parallaxElements = parallaxParent.children;
+    // build side bars
+   parallaxParent.insertAdjacentHTML(
+       "afterbegin",
+       '<div class="pillar" style="left:0; top:0; background-color:var(--mortuum); z-index:0;"></div>\n' +
+       '      <div class="pillar" style="left:0; top:0; width:12vh; background-color:var(--wine); z-index:-4;"></div>\n' +
+       '      <div class="pillar" style="left:0; top:0; width:15vh; background-color:var(--redwood); z-index:-7;"></div>\n' +
+       '      \n' +
+       '      <div class="pillar" style="right:0; top:0; background-color:var(--mortuum); z-index:0;"></div>\n' +
+       '      <div class="pillar" style="right:0; top:0; width:12vh; background-color:var(--wine); z-index:-4;"></div>\n' +
+       '      <div class="pillar" style="right:0; top:0; width:15vh; background-color:var(--redwood); z-index:-7;"></div>'
+   );
+
 
     for (let i = 0; i < parallaxElements.length; i++) {
         let depth = parallaxElements[i].style.zIndex;
@@ -90,7 +106,7 @@ addEventListener("load", (event) => {
     parallaxElements = parallaxParent.children;
 
     loaded = true;
-})
+}
 
 addEventListener("unload", (event) => {
     loaded = false;

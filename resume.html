@@ -8,40 +8,20 @@
     <link rel="icon" href="Resources/JPFavicon.png">
 </head>
 <body>
-<script src="pageNavigation.js"></script>
-    <div style="display:flex;flex-direction: column;position: sticky;top:0;">
-      <div id="navbar" class="navbar">
-        <p>James Prendergast</p>
-        <div style="flex-grow: 1;">
-          <div class="pages">
-            <
-            <button onclick="toAbout()">About</button>
-            |
-            <button onclick="toProjects()">Projects</button>
-            |
-            <button onclick="toResume()">Resume</button>
-            <|
-          </div>
-          <div class="icons">
-            <a href="https://thetwofingeredglove.itch.io/" target="_blank">
-              <object data="Resources/itchLogo.svg" type="image/svg+xml" style="height: 5vh;"></object>
-            </a>
-            |
-            <a href="https://www.linkedin.com/in/james-prendergast-a41119335/" target="_blank">
-              <object data="Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>
-            </a>
-          </div>
-          |>
+    <script src="background.js"></script>
+    <div id="parallax"></div>
+
+    <script src="pageNavigation.js"></script>
+    <div id="headerHolder"></div>
+
+    <div class="flexbox" id="contentHolder">
+
+        <div class="content" style="width: 70%; aspect-ratio: 8.5/11">
+            <object data="Resources/September 2025 - Resume - James Prendergast.pdf#view=FitH" type="application/pdf" width="100%" height="100%">
+                <p>Unable to display PDF file. Resume available for download</p>
+                <a href="Resources/September 2025 - Resume - James Prendergast.pdf" download style="pointer-events: all">James Prendergast Resume</a>
+            </object>
         </div>
     </div>
-        <div style="background-color:var(--mortuum);padding:10px;box-shadow: 0px 10px rgba(0, 0, 0, 0.75);"></div>
-        </div>
-        <div class="flexbox" id="contentHolder">
-            <div class="content">
-                <div>
-                    <h2 style="text-align: center;">-= Coming Soon =-</h2>
-                </div>
-            </div>
-        </div>
 </body>
 </html>

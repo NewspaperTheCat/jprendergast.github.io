@@ -11,50 +11,10 @@
 
   <body>
     <script src="background.js"></script>
-    <div class="parallax" onscroll="parallax(this)">
-      <div class="pillar" style="left:0; top:0; background-color:var(--mortuum); z-index:0;"></div>
-      <div class="pillar" style="left:0; top:0; width:12vh; background-color:var(--wine); z-index:-4;"></div>
-      <div class="pillar" style="left:0; top:0; width:15vh; background-color:var(--redwood); z-index:-7;"></div>
-      
-      <div class="pillar" style="right:0; top:0; background-color:var(--mortuum); z-index:0;"></div>
-      <div class="pillar" style="right:0; top:0; width:12vh; background-color:var(--wine); z-index:-4;"></div>
-      <div class="pillar" style="right:0; top:0; width:15vh; background-color:var(--redwood); z-index:-7;"></div>
-
-      <!-- <div class="bar" style="top: 600px; z-index: -7; background-color:var(--crayola);"></div> -->
-    </div>
+    <div id="parallax"></div>
 
     <script src="pageNavigation.js"></script>
-    <div style="display:flex;flex-direction: column;position: sticky;top:0;">
-      <div id="navbar" class="navbar">
-        <p>James Prendergast</p>
-        <div style="flex-grow: 1;">
-          <div class="pages">
-            <
-            <button onclick="toAbout()">About</button>
-            |
-            <button onclick="toProjects()">Projects</button>
-            |
-            <button onclick="toResume()">Resume</button>
-            <|
-          </div>
-          <div class="icons">
-            <a href="https://thetwofingeredglove.itch.io/" target="_blank">
-              <object data="Resources/itchLogo.svg" type="image/svg+xml" style="height: 5vh;"></object>
-            </a>
-            |
-            <a href="mailto:jmprendergast@wpi.edu?subject=Reaching Out from Portfolio" target="_blank">
-              <object data="Resources/emailIcon.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>
-            </a>
-             |
-            <a href="https://www.linkedin.com/in/james-prendergast-a41119335/" target="_blank">
-              <object data="Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>
-            </a>
-          </div>
-          |>
-        </div>
-      </div>
-      <div style="background-color:var(--mortuum);padding:10px;box-shadow: 0px 10px rgba(0, 0, 0, 0.75);"></div>
-    </div>
+    <div id="headerHolder"></div>
 
     <script src="projectReferences.js"></script>
     <div class="flexbox" id="contentHolder">
