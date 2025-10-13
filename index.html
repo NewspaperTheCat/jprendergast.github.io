@@ -26,7 +26,23 @@
         <img src="Resources/SeniorPortraitCroppedHead.jpg" alt="James Prendergast - Portrait Photo">
       </div>
 
-      <div class="content" id="projectsDivider" style="width: 80%;background-color: var(--redwood);"></div>
+      <div class="content" id="projectsDivider" style="width: 80%;background-color: var(--redwood); padding: 0; display: flex; justify-content: space-between;">
+        <div style="margin-left: 15px; display: flex; flex-display:row; gap: 10px;">
+          <button id="FeaturedSort" onclick="orderByFeatured()" class="sortOption sortSelected">Featured</button>
+          <button id="DateSort" onclick="orderByDate()" class="sortOption">Date</button>
+          <button id="RecognitionSort" onclick="orderByRecognition()" class="sortOption">Recognition</button>
+        </div>
+        <div style="margin-top: 10px">
+          <button onclick="setAscending(true)" style="pointer-events: all;">
+            <object id="sortUp" data="Resources/upEmpty.svg" type="image/svg+xml" style="height: 5vh;"></object>
+          </button>
+          <button onclick="setAscending(false)" style="pointer-events: all; margin-left: -20px;">
+            <object id="sortDown" data="Resources/downFilled.svg" type="image/svg+xml" style="height: 5vh;"></object>
+          </button>
+        </div>
+
+
+      </div>
 
     </div>
 

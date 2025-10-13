@@ -35,6 +35,7 @@ button, input[type="submit"], input[type="reset"] {
     flex-direction: column;
     position: sticky;
     top:0;
+    z-index: 2;
 }
 
 .navbar {
@@ -76,6 +77,23 @@ button, input[type="submit"], input[type="reset"] {
   gap: 20px;
 }
 
+.sortOption {
+    background-color: var(--redwood);
+    color: var(--ecru);
+
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sortSelected {
+    background-color: var(--ecru);
+    color: var(--redwood);
+}
+
 .flexbox {
   display: flex;
   flex-direction: column;
@@ -93,12 +111,30 @@ button, input[type="submit"], input[type="reset"] {
     gap: 20px;
 
     padding: 30px;
-    background-color: var(--mortuum);
     max-width: 70%;
+    z-index: 0;
+
+    background-color: var(--mortuum);
     border-radius: 10px;
     flex-wrap: wrap;
 
+    font-size: 24px;
+    color: var(--ecru);
+    text-decoration: none;
+
     box-shadow: 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+a.content {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.content:hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    transform: scale(1.15);
+    z-index: 1;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.5), 0px 0px 0px 5px var(--ecru) inset, 0px 0px 0px 15px var(--redwood) inset;
 }
 
 .content > img {
@@ -159,7 +195,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .pillar {
   position: fixed;
-  height: 100%;
+  height: 120%;
   width: 8vh;
   background-color: #555;
   z-index: 1;

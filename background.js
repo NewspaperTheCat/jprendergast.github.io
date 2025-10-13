@@ -18,7 +18,7 @@ function createParallax() {
     // establish connection to where
     parallaxParent = document.getElementById("parallax");
     parallaxParent.className = "parallax";
-    if (parallaxParent == null) {
+    if (parallaxParent === null) {
         loaded = false;
         return;
     }
@@ -44,7 +44,6 @@ function createParallax() {
     }
 
     let pageHeight = document.body.scrollHeight
-    console.log(pageHeight)
 
     // populate parallax squares
     for (let i = 0; i < numSquares; i++) {
