@@ -82,7 +82,7 @@ function initializeReferences() {
                 [new tag("Jam", "wine"), new tag("Ranked", "wine"), new tag("Team", "wine"),
                     new tag("Godot", "redwood"), new tag("3D", "redwood"),
                     new tag("2025", "wine")],
-                new Date(2025, 7), 2, 4,
+                new Date(2025, 7), 2, 3,
                 "https://thetwofingeredglove.itch.io/in-the-loop"),
 
             // It's All In The Delivery
@@ -91,12 +91,12 @@ function initializeReferences() {
                 [new tag("Jam", "wine"), new tag("COMPO", "wine"),
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
                     new tag("2023", "wine")],
-                new Date(2023, 5), 3,
+                new Date(2023, 5), 3, 4,
                 "https://thetwofingeredglove.itch.io/its-all-in-the-delivery"),
 
             // Parvescence
             new projectReference("Parvescence", "Resources/Parvescence.png", "Parvescence - Promotional Title",
-                "DJam8 Submission. An atmospheric game of evolution and adaptation in a resource-scarce petri dish.",
+                "DJam8 Submission. An atmospheric game of evolution and adaptation in a resource-scarce petri dish. 2nd place in audio out of ~200 submissions!",
                 [new tag("Jam", "wine"), new tag("Ranked", "wine"), new tag("Solo", "wine"),
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
                     new tag("2024", "wine")],
@@ -114,7 +114,7 @@ function initializeReferences() {
 
             // Spider Shoot
             new projectReference("Spider Shoot", "Resources/SpiderShoot.png", "Spider Shoot - Promotional Title",
-                "Final project of a college course made in a custom game engine of my own creation!",
+                "A small arcady final project of a college course made in a custom game engine of my own creation!",
                 [new tag("Team", "wine"),
                     new tag("Dragonfly", "redwood"), new tag("2D", "redwood"),
                     new tag("2025", "wine")],
@@ -123,11 +123,11 @@ function initializeReferences() {
 
             // Gumdrop Grove
             new projectReference("Gumdrop Grove", "Resources/GumdropGrove.png", "Grumdrop Grove - Screenshot",
-                "A dungeon crawler crawler with a charming aesthetic that tasks the player with memorizing their way back through progressively more complicated mazes.",
+                "A dungeon crawler with a charming aesthetic that tasks the player with memorizing their way back through progressively more complicated mazes.",
                 [new tag("+Jam+", "wine"), new tag("Solo", "wine"),
                     new tag("Godot", "redwood"), new tag("2D", "redwood"),
                     new tag("2024", "wine")],
-                new Date(2025, 7), 4, 1,
+                new Date(2024, 7), 4, 1,
                 "https://thetwofingeredglove.itch.io/gumdrop-grove-arcade")
         ];}
 
