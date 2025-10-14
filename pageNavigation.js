@@ -14,7 +14,11 @@ addEventListener("load", (event) => {
         });
     }
 
-    createParallax();
+    if (typeof createParallax === 'function') {
+        // if background script loaded
+        if (document.URL.includes("index") || document.URL.includes("resume")) createParallax();
+        else projectScatter();
+    }
 })
 
 function constructHeader() {
