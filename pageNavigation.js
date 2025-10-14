@@ -1,3 +1,5 @@
+const projName = "/jprendergast.github.io/"
+
 // main on load function
 addEventListener("load", (event) => {
     constructHeader();
@@ -39,15 +41,15 @@ function constructHeader() {
         '          </div>\n' +
         '          <div class="icons">\n' +
         '            <a href="https://thetwofingeredglove.itch.io/" target="_blank">\n' +
-        '              <object data="Resources/itchLogo.svg" type="image/svg+xml" style="height: 5vh;"></object>\n' +
+        '              <object data="' + projName + 'Resources/itchLogo.svg" type="image/svg+xml" style="height: 5vh;"></object>\n' +
         '            </a>\n' +
         '            |\n' +
         '            <a href="mailto:jmprendergast@wpi.edu?subject=Reaching Out from Portfolio" target="_blank">\n' +
-        '              <object data="Resources/emailIcon.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>\n' +
+        '              <object data="' + projName + 'Resources/emailIcon.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>\n' +
         '            </a>\n' +
         '             |\n' +
         '            <a href="https://www.linkedin.com/in/james-prendergast-a41119335/" target="_blank">\n' +
-        '              <object data="Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>\n' +
+        '              <object data="' + projName + 'Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>\n' +
         '            </a>\n' +
         '          </div>\n' +
         '          |>\n' +
@@ -58,7 +60,7 @@ function constructHeader() {
 
 function toAbout() {
     if (!document.URL.includes("index")) {
-        window.location.href = "index.html";
+        window.location.href = projName + "index.html";
     } else {
         window.scroll({
             top: 0,
@@ -69,7 +71,7 @@ function toAbout() {
 
 function toProjects() {
     if (!document.URL.includes("index")) {
-        window.location.href = "index.html#projects";
+        window.location.href = projName + "index.html#projects";
     } else {
         const elementPosition = document.getElementById('projectsDivider').getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({
@@ -80,7 +82,7 @@ function toProjects() {
 }
 
 function toResume() {
-    if (!document.URL.includes("resume")) window.location.href = "resume.html";
+    if (!document.URL.includes("resume")) window.location.href = projName + "resume.html";
 }
 
 function toProjectPage(project) {

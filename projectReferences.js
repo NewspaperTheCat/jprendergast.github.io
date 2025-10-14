@@ -68,7 +68,7 @@ function initializeReferences() {
     if (!project_references || project_references.length === 0) {
         project_references = [
             // Super Time Out!!
-            new projectReference("Super Time Out!!", "Resources/SuperTimeOut.png", "Super Time Out - Title Screen",
+            new projectReference("Super Time Out!!", "Resources/SuperTimeOut/SuperTimeOut.png", "Super Time Out - Title Screen",
                 "WPI IGDA New Tech 2025 Submission. A small Super Punch Out clone that plays with latency restricting reaction time windows.",
                 [new tag("Jam", "wine"), new tag("Solo", "wine"),
                     new tag("Pico-8", "redwood"), new tag("2D", "redwood"),
@@ -77,16 +77,16 @@ function initializeReferences() {
                 "https://thetwofingeredglove.itch.io/super-time-out"),
 
             // In The Loop
-            new projectReference("In The Loop", "Resources/InTheLoop.png", "In The Loop - Title Screen",
+            new projectReference("In The Loop", "Resources/InTheLoop/InTheLoop.png", "In The Loop - Title Screen",
                 "GMTK2025 Submission. A light-hearted puzzle game testing adaptation to peculiar, golfing-inspired movement.",
                 [new tag("Jam", "wine"), new tag("Ranked", "wine"), new tag("Team", "wine"),
                     new tag("Godot", "redwood"), new tag("3D", "redwood"),
                     new tag("2025", "wine")],
                 new Date(2025, 7), 2, 3,
-                "https://thetwofingeredglove.itch.io/in-the-loop"),
+                "Projects/inTheLoop.html"),
 
             // It's All In The Delivery
-            new projectReference("It's All In The Delivery", "Resources/ItsAllInTheDelivery.png", "It's All In The Delivery - Title Screen",
+            new projectReference("It's All In The Delivery", "Resources/ItsAllInTheDelivery/ItsAllInTheDelivery.png", "It's All In The Delivery - Title Screen",
                 "Ludum Dare 53 COMPO Submission. Help a socially anxious stand-up comic through a card game rendition of joke delivery.",
                 [new tag("Jam", "wine"), new tag("COMPO", "wine"),
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
@@ -95,7 +95,7 @@ function initializeReferences() {
                 "https://thetwofingeredglove.itch.io/its-all-in-the-delivery"),
 
             // Parvescence
-            new projectReference("Parvescence", "Resources/Parvescence.png", "Parvescence - Promotional Title",
+            new projectReference("Parvescence", "Resources/Parvescence/Parvescence.png", "Parvescence - Promotional Title",
                 "DJam8 Submission. An atmospheric game of evolution and adaptation in a resource-scarce petri dish. 2nd place in audio out of ~200 submissions!",
                 [new tag("Jam", "wine"), new tag("Ranked", "wine"), new tag("Solo", "wine"),
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
@@ -104,30 +104,30 @@ function initializeReferences() {
                 "https://thetwofingeredglove.itch.io/parvescence"),
 
             // Bullet Spell
-            new projectReference("Bullet Spell", "Resources/BulletSpell.png", "Bullet Spell - Promotional Title",
+            new projectReference("Bullet Spell", "Resources/BulletSpell/BulletSpell.png", "Bullet Spell - Promotional Title",
                 "Ludum Dare 54 COMPO submission and developed further. React swiftly as various enemy types bombard you according to a dynamic spawning directory.",
                 [new tag("+Jam+", "wine"), new tag("COMPO", "wine"),
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
                     new tag("2023", "wine")],
-                new Date(2023, 9), 5, 2,
+                new Date(2023, 9), 6, 2,
                 "https://thetwofingeredglove.itch.io/bullet-spell"),
 
             // Spider Shoot
-            new projectReference("Spider Shoot", "Resources/SpiderShoot.png", "Spider Shoot - Promotional Title",
+            new projectReference("Spider Shoot", "Resources/SpiderShoot/SpiderShoot.png", "Spider Shoot - Promotional Title",
                 "A small arcady final project of a college course made in a custom game engine of my own creation!",
                 [new tag("Team", "wine"),
                     new tag("Dragonfly", "redwood"), new tag("2D", "redwood"),
                     new tag("2025", "wine")],
-                new Date(2025, 9), 6, 0,
-                "spiderShoot.html"),
+                new Date(2025, 9), 4, 0,
+                "Projects/spiderShoot.html"),
 
             // Gumdrop Grove
-            new projectReference("Gumdrop Grove", "Resources/GumdropGrove.png", "Grumdrop Grove - Screenshot",
+            new projectReference("Gumdrop Grove", "Resources/GumdropGrove/GumdropGrove.png", "Grumdrop Grove - Screenshot",
                 "A dungeon crawler with a charming aesthetic that tasks the player with memorizing their way back through progressively more complicated mazes.",
                 [new tag("+Jam+", "wine"), new tag("Solo", "wine"),
                     new tag("Godot", "redwood"), new tag("2D", "redwood"),
                     new tag("2024", "wine")],
-                new Date(2024, 7), 4, 1,
+                new Date(2024, 7), 5, 1,
                 "https://thetwofingeredglove.itch.io/gumdrop-grove-arcade")
         ];}
 
