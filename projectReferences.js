@@ -30,7 +30,7 @@ class projectReference {
         this.element = document.createElement("a");
         this.element.className = "content";
         this.element.href = url;
-        this.element.target = "_blank";
+        if (url.includes("itch.io")) this.element.target = "_blank";
 
         var image_ele = document.createElement("img");
         image_ele.src = image;
@@ -119,7 +119,7 @@ function initializeReferences() {
                     new tag("Dragonfly", "redwood"), new tag("2D", "redwood"),
                     new tag("2025", "wine")],
                 new Date(2025, 9), 6, 0,
-                "https://thetwofingeredglove.itch.io/spider-shoot"),
+                "spiderShoot.html"),
 
             // Gumdrop Grove
             new projectReference("Gumdrop Grove", "Resources/GumdropGrove.png", "Grumdrop Grove - Screenshot",

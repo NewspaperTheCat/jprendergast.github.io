@@ -49,7 +49,7 @@ function constructHeader() {
         '          |>\n' +
         '        </div>\n' +
         '      </div>\n' +
-        '      <div style="background-color:var(--mortuum);padding:10px;box-shadow: 0px 10px rgba(0, 0, 0, 0.75);"></div>\n';
+        '      <div style="background-color:var(--mortuum);padding:10px;box-shadow: 0px 10px rgba(0, 0, 0, 0.75);z-index: 2;"></div>\n';
 }
 
 function toAbout() {

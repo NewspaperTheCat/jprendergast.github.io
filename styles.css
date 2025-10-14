@@ -31,6 +31,16 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+h3 {
+    margin: 5px 0 5px 0;
+}
+
+a {
+    color: var(--redwood);
+}
+
+/** ------------------------------------ **/
+/** navigation **/
 .navbarHolder {
     display:flex;
     flex-direction: column;
@@ -78,6 +88,8 @@ button, input[type="submit"], input[type="reset"] {
   gap: 20px;
 }
 
+/** ------------------------------------ **/
+/** project references **/
 .sortOption {
     background-color: var(--redwood);
     color: var(--ecru);
@@ -154,6 +166,7 @@ a.content:hover {
     text-align: left;
 }
 
+/** ------------------------------------ **/
 /** tags **/
 .tag_container {
     height: 50px;
@@ -171,6 +184,52 @@ a.content:hover {
     padding: 10px;
 }
 
+/** ------------------------------------ **/
+/** project descriptions **/
+.project {
+    margin : 30px;
+    z-index: 0;
+    gap: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project > div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project > div > div {
+    padding: 20px;
+
+    background-color: var(--mortuum);
+    border-radius: 10px;
+
+    font-size: 24px;
+    color: var(--ecru);
+    text-decoration: none;
+
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project > div > div > div {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project > div > img {
+    height: 50vh;
+
+    border-radius: 10px;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+/** ------------------------------------ **/
 /** background elements **/
 .parallax {
     position: fixed;
