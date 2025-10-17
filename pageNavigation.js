@@ -2,6 +2,10 @@ const projName = "/jprendergast.github.io/"
 
 // main on load function
 addEventListener("load", (event) => {
+    if (document.URL.endsWith("/jprendergast.github.io/")) {
+        window.location.href = projName + "index.html";
+    }
+
     constructHeader();
 
     if (document.URL.includes("index")) {

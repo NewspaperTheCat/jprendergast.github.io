@@ -110,7 +110,7 @@ function initializeReferences() {
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
                     new tag("2023", "wine")],
                 new Date(2023, 9), 6, 2,
-                "https://thetwofingeredglove.itch.io/bullet-spell"),
+                "Projects/bulletSpell.html"),
 
             // Spider Shoot
             new projectReference("Spider Shoot", "Resources/SpiderShoot/SpiderShoot.png", "Spider Shoot - Promotional Title",
@@ -128,7 +128,7 @@ function initializeReferences() {
                     new tag("Godot", "redwood"), new tag("2D", "redwood"),
                     new tag("2024", "wine")],
                 new Date(2024, 7), 5, 1,
-                "https://thetwofingeredglove.itch.io/gumdrop-grove-arcade")
+                "Projects/gumdropGrove.html")
         ];}
 
     content_holder = document.getElementById("contentHolder");
