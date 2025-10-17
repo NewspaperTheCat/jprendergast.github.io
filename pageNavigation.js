@@ -41,9 +41,9 @@ function constructHeader() {
         '            <button onclick="toProjects()">Projects</button>\n' +
         '            |\n' +
         '            <button onclick="toResume()">Resume</button>\n' +
-        '            <|\n' +
         '          </div>\n' +
         '          <div class="icons">\n' +
+        '            <|\n' +
         '            <a href="https://thetwofingeredglove.itch.io/" target="_blank">\n' +
         '              <object data="' + projName + 'Resources/itchLogo.svg" type="image/svg+xml" style="height: 5vh;"></object>\n' +
         '            </a>\n' +
@@ -55,8 +55,8 @@ function constructHeader() {
         '            <a href="https://www.linkedin.com/in/james-prendergast-a41119335/" target="_blank">\n' +
         '              <object data="' + projName + 'Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>\n' +
         '            </a>\n' +
+        '            |>\n' +
         '          </div>\n' +
-        '          |>\n' +
         '        </div>\n' +
         '      </div>\n' +
         '      <div style="background-color:var(--mortuum);padding:10px;box-shadow: 0px 10px rgba(0, 0, 0, 0.75);z-index: 2;"></div>\n';
