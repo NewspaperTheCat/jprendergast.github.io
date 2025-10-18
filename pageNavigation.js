@@ -45,15 +45,15 @@ function constructHeader() {
         '          <div class="icons">\n' +
         '            <|\n' +
         '            <a href="https://thetwofingeredglove.itch.io/" target="_blank">\n' +
-        '              <object data="' + projName + 'Resources/itchLogo.svg" type="image/svg+xml" style="height: 5vh;"></object>\n' +
+        '              <object data="' + projName + 'Resources/itchLogo.svg" type="image/svg+xml" style="height: 57px;"></object>\n' +
         '            </a>\n' +
         '            |\n' +
         '            <a href="mailto:jmprendergast@wpi.edu?subject=Reaching Out from Portfolio" target="_blank">\n' +
-        '              <object data="' + projName + 'Resources/emailIcon.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>\n' +
+        '              <object data="' + projName + 'Resources/emailIcon.svg" type="image/svg+xml" style="height: 69px; padding-top: 2px"></object>\n' +
         '            </a>\n' +
         '             |\n' +
         '            <a href="https://www.linkedin.com/in/james-prendergast-a41119335/" target="_blank">\n' +
-        '              <object data="' + projName + 'Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 6vh; padding-top: 2px"></object>\n' +
+        '              <object data="' + projName + 'Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 69px; padding-top: 2px"></object>\n' +
         '            </a>\n' +
         '            |>\n' +
         '          </div>\n' +

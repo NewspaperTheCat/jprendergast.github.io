@@ -17,7 +17,7 @@ body {
   margin: 0px;
 
   font-family: "Audiowide", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--ecru);
 }
 
@@ -52,6 +52,7 @@ a {
     top:0;
     z-index: 2;
     width: 100%;
+    font-size: 24px;
 }
 
 .navbar {
@@ -139,7 +140,7 @@ a {
     border-radius: 10px;
     flex-wrap: wrap;
 
-    font-size: 24px;
+    font-size: 20px;
     color: var(--ecru);
     text-decoration: none;
 
@@ -165,7 +166,7 @@ a.content:hover {
 }
 
 .content > div {
-    max-width: 625px;
+    max-width: 500px;
     min-width: 100px;
     justify-content: center;
 }
@@ -178,7 +179,7 @@ a.content:hover {
 /** tags **/
 .tag_container {
 
-    font-size: 20px;
+    font-size: 16px;
 
     display: flex;
     justify-content: center;
@@ -217,7 +218,7 @@ a.content:hover {
     background-color: var(--mortuum);
     border-radius: 10px;
 
-    font-size: 24px;
+    font-size: 20px;
     color: var(--ecru);
     text-decoration: none;
 
@@ -246,7 +247,8 @@ a.content:hover {
 
 .imgarray > img {
     display: block;
-    height: 27vh;
+    max-height: 27vh;
+    height: 300px;
     width: auto;
 
     border-radius: 10px;
@@ -280,7 +282,7 @@ a.content:hover {
 .pillar {
   position: fixed;
   height: 120%;
-  width: 8vh;
+  width: 5%;
   background-color: #555;
   z-index: 1;
   transform: rotate(180deg);
