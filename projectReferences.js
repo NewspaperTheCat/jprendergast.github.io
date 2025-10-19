@@ -83,7 +83,7 @@ function initializeReferences() {
                     new tag("Godot", "redwood"), new tag("3D", "redwood"),
                     new tag("2025", "wine")],
                 new Date(2025, 7), 2, 3,
-                "Projects/inTheLoop.html"),
+                "projects/inTheLoop.html"),
 
             // It's All In The Delivery
             new projectReference("It's All In The Delivery", "Resources/ItsAllInTheDelivery/ItsAllInTheDelivery.png", "It's All In The Delivery - Title Screen",
@@ -110,7 +110,7 @@ function initializeReferences() {
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
                     new tag("2023", "wine")],
                 new Date(2023, 9), 6, 2,
-                "Projects/bulletSpell.html"),
+                "projects/bulletSpell.html"),
 
             // Spider Shoot
             new projectReference("Spider Shoot", "Resources/SpiderShoot/SpiderShoot.png", "Spider Shoot - Promotional Title",
@@ -119,7 +119,7 @@ function initializeReferences() {
                     new tag("Dragonfly", "redwood"), new tag("2D", "redwood"),
                     new tag("2025", "wine")],
                 new Date(2025, 9), 4, 0,
-                "Projects/spiderShoot.html"),
+                "projects/spiderShoot.html"),
 
             // Gumdrop Grove
             new projectReference("Gumdrop Grove", "Resources/GumdropGrove/GumdropGrove.png", "Grumdrop Grove - Screenshot",
@@ -128,7 +128,7 @@ function initializeReferences() {
                     new tag("Godot", "redwood"), new tag("2D", "redwood"),
                     new tag("2024", "wine")],
                 new Date(2024, 7), 5, 1,
-                "Projects/gumdropGrove.html")
+                "projects/gumdropGrove.html")
         ];}
 
     content_holder = document.getElementById("contentHolder");

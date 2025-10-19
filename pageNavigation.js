@@ -1,9 +1,7 @@
-const projName = "/jprendergast.github.io/"
-
 // main on load function
 addEventListener("load", (event) => {
-    if (document.URL.endsWith("/jprendergast.github.io/")) {
-        window.location.href = projName + "index.html";
+    if (document.URL.endsWith("jprendergast.github.io/") || document.URL.endsWith("jprendergast.net/")) {
+        window.location.href = "index.html"
     }
 
     constructHeader();
@@ -45,15 +43,15 @@ function constructHeader() {
         '          <div class="icons">\n' +
         '            <|\n' +
         '            <a href="https://thetwofingeredglove.itch.io/" target="_blank">\n' +
-        '              <object data="' + projName + 'Resources/itchLogo.svg" type="image/svg+xml" style="height: 57px;"></object>\n' +
+        '              <object data="/Resources/itchLogo.svg" type="image/svg+xml" style="height: 57px;"></object>\n' +
         '            </a>\n' +
         '            |\n' +
         '            <a href="mailto:jmprendergast@wpi.edu?subject=Reaching Out from Portfolio" target="_blank">\n' +
-        '              <object data="' + projName + 'Resources/emailIcon.svg" type="image/svg+xml" style="height: 69px; padding-top: 2px"></object>\n' +
+        '              <object data="/Resources/emailIcon.svg" type="image/svg+xml" style="height: 69px; padding-top: 2px"></object>\n' +
         '            </a>\n' +
         '             |\n' +
         '            <a href="https://www.linkedin.com/in/james-prendergast-a41119335/" target="_blank">\n' +
-        '              <object data="' + projName + 'Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 69px; padding-top: 2px"></object>\n' +
+        '              <object data="/Resources/linkedInLogo.svg" type="image/svg+xml" style="height: 69px; padding-top: 2px"></object>\n' +
         '            </a>\n' +
         '            |>\n' +
         '          </div>\n' +
@@ -64,7 +62,11 @@ function constructHeader() {
 
 function toAbout() {
     if (!document.URL.includes("index")) {
-        window.location.href = projName + "index.html";
+        if (document.URL.includes("projects")) {
+            window.location.href = "../index.html";
+        } else {
+            window.location.href = "./index.html";
+        }
     } else {
         window.scroll({
             top: 0,
@@ -75,7 +77,11 @@ function toAbout() {
 
 function toProjects() {
     if (!document.URL.includes("index")) {
-        window.location.href = projName + "index.html#projects";
+        if (document.URL.includes("projects")) {
+            window.location.href = "../index.html#projects";
+        } else {
+            window.location.href = "./index.html#projects";
+        }
     } else {
         const elementPosition = document.getElementById('projectsDivider').getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({
@@ -86,13 +92,11 @@ function toProjects() {
 }
 
 function toResume() {
-    if (!document.URL.includes("resume")) window.location.href = projName + "resume.html";
-}
-
-function toProjectPage(project) {
-
-}
-
-function getCurrentPage() {
-
+    if (!document.URL.includes("resume")) {
+        if (document.URL.includes("projects")) {
+            window.location.href = "../resume.html";
+        } else {
+            window.location.href = "./resume.html";
+        }
+    }
 }
