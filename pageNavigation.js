@@ -1,6 +1,6 @@
 // main on load function
 addEventListener("load", (event) => {
-    if (document.URL.endsWith("jprendergast.github.io/") || document.URL.endsWith("jprendergast.net/")) {
+    if (document.URL.endsWith("jprendergast.github.io/") || document.URL.endsWith("jprendergast.dev/")) {
         window.location.href = "index.html"
     }
 
