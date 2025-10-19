@@ -162,7 +162,9 @@ a.content:hover {
 
 .content > img {
     box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
-    height: 275px;
+    max-height: 275px;
+    max-width: calc(100% - 520px);
+    min-width: 275px;
     border-radius: 10px;
 }
 
