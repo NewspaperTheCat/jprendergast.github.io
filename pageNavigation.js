@@ -30,7 +30,7 @@ function constructHeader() {
     navbar.className = "navbarHolder";
     navbar.innerHTML =
         '      <div id="navbar" class="navbar">\n' +
-        '        <p>James Prendergast</p>\n' +
+        '        <p><button onclick="toAbout()">James Prendergast</button></p>\n' +
         '        <div style="flex-grow: 1;">\n' +
         '          <div class="pages">\n' +
         '            <\n' +
@@ -46,7 +46,7 @@ function constructHeader() {
         '              <object data="/Resources/itchLogo.svg" type="image/svg+xml" style="height: 57px;"></object>\n' +
         '            </a>\n' +
         '            |\n' +
-        '            <a href="mailto:jmprendergast@wpi.edu?subject=Reaching Out from Portfolio" target="_blank">\n' +
+        '            <a href="mailto:jprendergastdev@gmail.com?subject=Reaching Out from Portfolio" target="_blank">\n' +
         '              <object data="/Resources/emailIcon.svg" type="image/svg+xml" style="height: 69px; padding-top: 2px"></object>\n' +
         '            </a>\n' +
         '             |\n' +
