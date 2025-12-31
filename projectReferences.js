@@ -73,7 +73,7 @@ function initializeReferences() {
                 [new tag("Jam", "wine"), new tag("Solo", "wine"),
                     new tag("Pico-8", "redwood"), new tag("2D", "redwood"),
                     new tag("2025", "wine")],
-                new Date(2025, 8), 8, 7,
+                new Date(2025, 8), 9, 8,
                 "https://thetwofingeredglove.itch.io/super-time-out"),
 
             // In The Loop
@@ -82,7 +82,7 @@ function initializeReferences() {
                 [new tag("Jam", "wine"), new tag("Ranked", "wine"), new tag("Team", "wine"),
                     new tag("Godot", "redwood"), new tag("3D", "redwood"),
                     new tag("2025", "wine")],
-                new Date(2025, 7), 2, 4,
+                new Date(2025, 7), 2, 5,
                 "projects/inTheLoop.html"),
 
             // It's All In The Delivery
@@ -91,7 +91,7 @@ function initializeReferences() {
                 [new tag("Jam", "wine"), new tag("COMPO", "wine"),
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
                     new tag("2023", "wine")],
-                new Date(2023, 5), 3, 5,
+                new Date(2023, 5), 3, 6,
                 "https://thetwofingeredglove.itch.io/its-all-in-the-delivery"),
 
             // Parvescence
@@ -100,7 +100,7 @@ function initializeReferences() {
                 [new tag("Jam", "wine"), new tag("Ranked", "wine"), new tag("Solo", "wine"),
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
                     new tag("2024", "wine")],
-                new Date(2024, 7), 0, 6,
+                new Date(2024, 7), 0, 7,
                 "https://thetwofingeredglove.itch.io/parvescence"),
 
             // Bullet Spell
@@ -109,7 +109,7 @@ function initializeReferences() {
                 [new tag("+Jam+", "wine"), new tag("COMPO", "wine"),
                     new tag("Unity", "redwood"), new tag("2D", "redwood"),
                     new tag("2023", "wine")],
-                new Date(2023, 9), 7, 3,
+                new Date(2023, 9), 7, 4,
                 "projects/bulletSpell.html"),
 
             // Spider Shoot
@@ -127,7 +127,7 @@ function initializeReferences() {
                 [new tag("+Jam+", "wine"), new tag("Solo", "wine"),
                     new tag("Godot", "redwood"), new tag("2D", "redwood"),
                     new tag("2024", "wine")],
-                new Date(2024, 7), 6, 2,
+                new Date(2024, 7), 6, 3,
                 "projects/gumdropGrove.html"),
 
             // Split Controls
@@ -136,8 +136,17 @@ function initializeReferences() {
                 [new tag("Solo", "wine"),
                     new tag("Javascript", "redwood"), new tag("HTML", "redwood"), new tag("Python", "redwood"),
                     new tag("2025", "wine")],
-                new Date(2025, 10), 5, 1,
-                "projects/splitControls.html")
+                new Date(2025, 10), 5, 2,
+                "projects/splitControls.html"),
+
+            // And the World Went Dark
+            new projectReference("World Went Dark", "Resources/AtWWD/AtWWDTitle.jpg", "And the World Went Dark - Title",
+                "A \"you are what you wear\" turn-based strategy roguelike developed as capstone project for a team of WPI students.",
+                [new tag("Team", "wine"),
+                    new tag("Godot", "redwood"), new tag("GDScript", "redwood"), new tag("C#", "redwood"),
+                    new tag("2025", "wine")],
+                new Date(2025, 5), 8, 1,
+                "projects/andTheWorldWentDark.html")
         ];}
 
     content_holder = document.getElementById("contentHolder");
